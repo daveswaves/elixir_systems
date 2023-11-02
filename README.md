@@ -34,3 +34,7 @@ Final notes: The product descriptions in the 'Items' column are hyperlinks that 
 
 ![Image of Scan Barcodes](docs/imgs/scan_barcodes.png)
 
+Lost focus
+
+![Image of Scan Barcodes](docs/imgs/scan_barcodes_red.png)
+
