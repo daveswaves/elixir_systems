@@ -1,6 +1,7 @@
 # Elixir Systems
 
 * [View Orders](#view-orders)
+* [Scan Barcodes](#scan-barcodes)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -25,3 +26,11 @@ The `Action` menu in the top right has several batch operations that can be used
 The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the majority are grey (white) "Order is ready to be processed, unbarcoded" and red "Order has been processed but not yet marked". The green order (026-1324051-2893122) indicates that "Order has been marked and is ready to be dispatched".
 
 ![Image of view orders key](docs/imgs/vo_key.png)
+
+Final notes: The product descriptions in the 'Items' column are hyperlinks that open the product on relevant platform (Amazon, eBay etc) in a new tab.
+
+
+## Scan Barcodes
+
+![Image of Scan Barcodes](docs/imgs/scan_barcodes.png)
+
