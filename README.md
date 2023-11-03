@@ -23,7 +23,7 @@ The `Action` menu in the top right has several batch operations that can be used
 
 ![Image of batch actions](docs/imgs/batch_actions.png)
 
-The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 orders are green "Order has been marked and is ready to be dispatched", followed by red "Order has been processed but not yet marked" and grey "Order is ready to be processed, unbarcoded".
+The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 orders are green *"Order has been marked and is ready to be dispatched"*, followed by red *"Order has been processed but not yet marked"* and grey *"Order is ready to be processed, unbarcoded"*.
 
 ![Image of view orders key](docs/imgs/vo_key.png)
 
