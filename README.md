@@ -76,7 +76,7 @@ The barcode scanner can only input barcodes if the page is in focus (green backg
 
 ## Create an Order
 
-The **Create an Order** page actually has 2 states. The default (below) is the one that appears when accessed from the **Ground Control** page. The second is **Reorder**, and this appears when accessed from the `New order to customer` option `Action` drop-down (View Orders) - more on this later.
+The **Create an Order** page actually has 2 states. The default (below) is the one that appears when accessed from the **Ground Control** page. The second is **Reorder**, and this appears when accessed from the `New order to customer` option in the `Action` drop-down menu (View Orders) - more on this later.
 
 ![Image of Create an Order](docs/imgs/create_an_order.png)
 
@@ -91,3 +91,11 @@ The drop-down below this displays the 3 channel options (Elixir, Floorworld & Pr
 The **Items** section displays the input fields (when `Need Invoice?` checkbox selected) to add items to an order:  
 
 ![Image of need_invoice](docs/imgs/need_invoice.png)
+
+As mentioned earlier, when accessed via the `New order to customer` link, it is a reorders page. Basically, it prepopulates the form fields with existing customer data:  
+
+![Image of reorder](docs/imgs/reorder.png)
+
+If `Repeat last order` is clicked, in the `Items` section, the customers order items are prepopulated:  
+
+![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
