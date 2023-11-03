@@ -78,10 +78,10 @@ The barcode scanner can only input barcodes if the page is in focus (green backg
 
 ![Image of Create an Order](docs/imgs/create_an_order.png)
 
-The `Please choose a courier` drop-down options are the same as the `Courier Codes` in the `Key` drop-down on the `View Orders` page.
+The `Please choose a courier` drop-down options are the same as the `Courier Codes` in the `Key` drop-down on the `View Orders` page:
 
 ![Image of Please choose a courier](docs/imgs/please_choose_a_courier.png)
 
+The drop-down below this displays the 3 channel options (Elixir, Floorworld & Prosalt) - displays the correct invoice logo:  
 
-
-![Image of platform](docs/imgs/choose_platform.png)
+![Image of platform](docs/imgs/select_channel.png)
