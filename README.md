@@ -23,7 +23,7 @@ The `Action` menu in the top right has several batch operations that can be used
 
 ![Image of batch actions](docs/imgs/batch_actions.png)
 
-The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the majority are grey (white) "Order is ready to be processed, unbarcoded" and red "Order has been processed but not yet marked". The green order (026-1324051-2893122) indicates that "Order has been marked and is ready to be dispatched".
+The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 are green "Order has been marked and is ready to be dispatched". Then red "Order has been processed but not yet marked" and grey "Order is ready to be processed, unbarcoded".
 
 ![Image of view orders key](docs/imgs/vo_key.png)
 
@@ -32,9 +32,18 @@ Final notes: The product descriptions in the 'Items' column are hyperlinks that 
 
 ## Scan Barcodes
 
+The barcodes DB table stores the status of the order:
+
+* GENERATED (displays as red in View Orders)
+* MARKED (green)
+* VOID (brown)
+* HOLD (yellow)
+
+Nb. grey are orders that don't yet have a barcode
+
 ![Image of Scan Barcodes](docs/imgs/scan_barcodes.png)
 
-Lost focus
+The barcode scanner can only input barcodes if the page is in focus (green background). To signal this, the background turns red when focus is lost.
 
 ![Image of Scan Barcodes](docs/imgs/scan_barcodes_red.png)
 
