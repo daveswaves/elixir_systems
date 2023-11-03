@@ -1,0 +1,149 @@
+***** operations that currently exist in FESP ***** in brackets need additional
+1. get Hermes data - display as editable table with inflated price and option to create csv (http://192.168.0.24/FESP-REFACTOR/get_hermes_data.php)
+/////////////////////////////////////////////////////
+Generate Table and File from main database which we sending to Hermes for claims (Part of Triple RRR which not working, we setup separately)
+-----------------------------------------------------
+2. Searchable by orderId, title, postcode, sku (by barcode, email etc if need more)
+/////////////////////////////////////////////////////
+Search function which looking in main database for orderId or postcode or title or sku and display everything what find
+Planing add more options for search (by barcode, email etc if need more)
+Need made main search by few main options like orderId, barcode and postcode others with selecting which option (must make speed up)
+-----------------------------------------------------
+3. Scan: mark/hold/unmark/take of hold (http://deepthought/sandbox/barcodedb/?action=scan); void/unvoid (http://192.168.0.24/SANDBOX/BarcodeDB/updateOrderStatus.php)
+/////////////////////////////////////////////////////
+When we scan order it change status in barcode database using to indicate on which stage are order
+-----------------------------------------------------
+4. Manually recreate orders from existing order (http://192.168.0.24/fesp-refactor/?action=reorder&orderID=........) load order number in reference
+/////////////////////////////////////////////////////
+When we click for existing order 'Action->New order to customer' open new tab with form to create a order with all data from customer (Address, Name etc.)
+-----------------------------------------------------
+5. Tracking system
+/////////////////////////////////////////////////////
+When we processing order for specific courier its request by api label.
+We sending request with all needed details to courier side, after receiving label, tracking from label we store in database.
+Received label attached on generated invoice and sending to 'Saved Invoices' or Printer.
+When we click for existing order 'Action->View All Tracking' its show all tracking to this order
+-----------------------------------------------------
+6. Dispatch (Change status on platform) / Upload tracking all platforms
+/////////////////////////////////////////////////////
+Dispatch: (For Amazon need make API Dispatch)
+Amazon - generate file with all marked orders which not been dispatch yet, when finish upload orders in dispatch database. File we upload on amazon backend.
+Ebay, Onbuy - Load Main Screen and press 'Dispatch all scanned orders' system collect all marked orders from screen collect from database tracking for them and upload by API. Upload orders in dispatch database
+Website - everything similar to Ebay and Onbuy but upload whith David script and it send emails to customers with tracking numbers
+-----------------------------------------------------
+7. Logic
+/////////////////////////////////////////////////////
+With Scheduler running every hour and pull orders from API orders database to Main database system send it through Logic, taking item from order and looking in Logic database parameters. By weight, length, postcodes, shipping cost its select which courier be assign to order.
+-----------------------------------------------------
+8. Add/Delete tracking (http://192.168.0.24/resources/addTrackingID.php)
+/////////////////////////////////////////////////////
+If we not use label we delete it, if we buy new we adding in database
+-----------------------------------------------------
+9. Create Multiple Invoices (fix error after create order optional)(http://192.168.0.24/resources/multi_order.php)
+/////////////////////////////////////////////////////
+Pick up order details with multi items and split order items in option 1,2,3.... where number mean which order be after splitting (e.g. 2 items be with number 1 and 3 items with number 2 then its be split on 2 orders) when you sort order its been printed like normal orders amount
+Details for order get from main database, weight and length from logic database, default sorting rooms from stock_controll database
+-----------------------------------------------------
+10. Saved Invoice (add function print by rooms)(http://deepthought/fesp-refactor/fespmvc/view_saved_invoices.php)
+/////////////////////////////////////////////////////
+With Scheduler running every hour taking all orders from main database which not in barcode database for specific courier (grey orders, not generated yet, limit 200 orders) for each order request label from courier by API and save them in directory as .png, after from interface can sort them few different ways print and check what be printed.
+-----------------------------------------------------
+11. Triple RRR (probably need rebuild)(http://192.168.0.125/ecs/frontend/dist/Login)
+/////////////////////////////////////////////////////
+Liam
+-----------------------------------------------------
+12. Link to sales platform and order details (on Platform) (looks that works already)
+/////////////////////////////////////////////////////
+Link to sales platform:
+When we click for existing order 'Action->View Order on "Platform"' open new tab on "Platform" backend with current order, Onbuy platform not working and looks not possible create
+Link to order details (on Platform):
+When we click in column Items link to product name open in new tab on Platform customer end with current product, Onbuy platform not working and looks not possible create
+-----------------------------------------------------
+13. Preview, Print or Force orders
+/////////////////////////////////////////////////////
+Preview:
+When we select order and click 'Action->Preview Invoices' open in new tab generated xml invoice.
+Print:
+When select order and click 'Process selected orders' system request label after generate order attach to it label and send to printer, we have 2 printing types 'Plain Paper' and 'Integrated Paper', 'Plain Paper' its sending on default server printer and 'Integrated Paper' send with driver to shared printer.
+Force:
+When we select order and click 'Action->Force courier & process selected orders' its force on selected courier from dropdown menu
+-----------------------------------------------------
+14. CSV import for orders if platform api go down (http://192.168.0.24/FESP-REFACTOR/FespMVC/NEW_API_SYSTEM/view_stats.php)(only amazon and ebay working)
+/////////////////////////////////////////////////////
+We download Reports for orders from Platform (e.g. amazon give tab delimited report) and then we import in system in api database, on next refresh they come in Main database.
+-----------------------------------------------------
+15. Send emails to customer
+/////////////////////////////////////////////////////
+When we click 'Action->Send email to customer' it generate email which we can send to customer. When surcharge sending its generate surcharge message, but click need on link in message column.
+-----------------------------------------------------
+16. Memo
+/////////////////////////////////////////////////////
+When we click 'Action->Add Note' its adding memo in system, this option using as well if customer left message or instructions for order
+-----------------------------------------------------
+17. Courier API request labels (Whistl, Hermes, Prime)
+/////////////////////////////////////////////////////
+Whistl:
+When process order we sending request to whistl by API using different service (e.g. Whistl Letter, Whistl NextDay or Whistl 48) all they separate by service which we request
+Hermes:
+When process order we sending request to hermes by API using weight and length to select different service (e.g. Hermes 0-2, Hermes 2-15, Hermes L&L)
+Prime:
+When we get amazon orders, after starting another script which select Prime orders and requesting Prime labels which storing in label database, when orders in main database when we print them system looking for label in label database and attach to order
+-----------------------------------------------------
+18. Request orders API
+/////////////////////////////////////////////////////
+Amazon orders API:
+With Scheduler running every hour and requesting orders from Amazon with phyton script, after store them in amazon orders database, after run another scheduler which copy them from amazon orders database to API orders database
+Ebay orders API:
+With Scheduler running every hour and requesting orders from Ebay with php script, after store them in API orders database
+Onbuy orders API:
+With Scheduler running every hour and requesting orders from Onbuy with php script, after store them in API orders database
+Website orders API:
+With Scheduler running every hour and requesting orders from Website with php script which not API its manually made by David, after store them in API orders database
+-----------------------------------------------------
+19. Main screen
+/////////////////////////////////////////////////////
+When refresh main screen system pull not dispatched or voided orders on screen
+-----------------------------------------------------
+20. API Stats Page
+/////////////////////////////////////////////////////
+API Stats:
+Show statistic of how many orders come on each download, time, total and etc.
+Import CSV:
+Look at section 14
+Import eBay CSV:
+Look at section 14
+Run APIs Manually:
+Current not working
+Dispatched Order IDs:
+Pull data from dispatch database and show how many and when they been dispatch, can look on each dispatch which orders been inside
+UserTokens Expiry:
+show time when tokens expiry and before 10 days highlight on API Stats main page
+Endpoints:
+Just info for IT team
+Add ASINS Titles Vars:
+Using asins, titles and variation for all amazon orders, if this item not in title database highlight on API Stats main page, and need manually or by CSV upload.
+Create Amazon tracking CSV:
+Look at section 6
+-----------------------------------------------------
+21. Stock Control (coming more info) (http://192.168.0.24:8080/stocksystem/dist/)
+22. Listings (coming more info)(http://192.168.0.24/LISTINGS/listings.php)
+
+
+***** second list is all the extras, improvements etc *****
+1. CSV export with flexible columns
+2. Rebuild main screen
+3. New system to make customer orders with quick access to SKUS and website price (http://192.168.0.24/fesp-refactor/?action=createOrderForm)
+4. Amazon messaging automatically with tracking, if not, then find another way (no need?)
+5. Surcharge build (must be attached to logic) (done, need attach to new system)
+6. Archive new database system
+7. Store images offline
+8. Short Title for products on invoice
+9. Store tracking - Direct link (in view tracking create direct link to courier website with tracking) (done, need attach to new system)
+10. Edit orders without the need to print/process & recreate
+11. Surcharge emails bulk - feature
+12. Additional actions taken on orders recorded, need all timestamp on all actions
+13. Static top bar on main screen (done)
+14. Request Hermes Multi labels (Liam must get needed information)
+15. Admin page to change printers, courier and etc in code (external file must be) (done)
+16. Sort orders by status
+17. Check validation of post code (done, need attach to new system)

@@ -96,11 +96,11 @@ The **Items** section displays the input fields (when `Need Invoice?` checkbox s
 
 ## Reorder
 
-As mentioned earlier, when accessed via the `New order to customer` link, it is a reorders page. Basically, it prepopulates the form fields with existing customer data:  
+As mentioned earlier, when accessed via the `New order to customer` link, it displays as a `Reorder` page. Basically, it prepopulates the form fields with existing customer data:  
 
 ![Image of reorder](docs/imgs/reorder.png)
 
-If `Repeat last order` is clicked, in the `Items` section, the customer's order items are prepopulated:  
+It also displays a`Repeat last order` link in the `Items` section. When clicked, the customer's order items are prepopulated:  
 
 ![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
 
