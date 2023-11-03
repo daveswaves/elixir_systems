@@ -29,13 +29,13 @@ The channels are only relevant to Ebay. We currently have 3 different Ebay accou
 
 The channel values affect which logos are displayed at the top of invoices:
 
-'Elixir':
+Elixir:  
 ![Image of invoice logo - Elixir](docs/imgs/invoice_logo_elixir.png)
 
-'Elixir':
+Floorworld:  
 ![Image of invoice logo - Floorworld](docs/imgs/invoice_logo_floorworld.png)
 
-'Elixir':
+Prosalt:  
 ![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png)
 
 
