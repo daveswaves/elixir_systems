@@ -4,6 +4,7 @@
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
+* [Invoice](#invoice)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -102,3 +103,7 @@ As mentioned earlier, when accessed via the `New order to customer` link, it is 
 If `Repeat last order` is clicked, in the `Items` section, the customer's order items are prepopulated:  
 
 ![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
+
+## Invoice
+
+![Image of invoice](docs/imgs/invoice.png)
