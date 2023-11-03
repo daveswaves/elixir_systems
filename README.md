@@ -27,6 +27,20 @@ The channels are only relevant to Ebay. We currently have 3 different Ebay accou
 
 ![Image of View Orders](docs/imgs/view_orders.png)
 
+The channel values affect which logos are displayed at the top of invoices:
+
+'Elixir':
+![Image of invoice logo - Elixir](docs/imgs/invoice_logo_elixir.png)
+
+'Elixir':
+![Image of invoice logo - Floorworld](docs/imgs/invoice_logo_floorworld.png)
+
+'Elixir':
+![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png)
+
+
+
+
 Orders with a message, display an envelope icon (mouseover displays the message). Several operations relevant to an order can be selected by hovering over the `Actions` button:
 
 ![Image of action menu and messages](docs/imgs/vo_action_menu_and_messages.png)
