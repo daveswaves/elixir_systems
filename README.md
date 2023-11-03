@@ -16,6 +16,15 @@ A further dozen or so operations are available in the drop-down menu:
 
 ## View Orders
 
+Displays orders that require processing in our system. These come from different platforms:
+
+* Amazon
+* Ebay
+* Elixir Website
+* onBuy
+
+The channels are only relevant to Ebay. We currently have 3 different Ebay accounts: Elixir, Floorworld & Prosalt. So the `Channel` column value displays which Ebay account the order is from. All non Ebay orders are automatically assigned a value of 'Elixir'.
+
 ![Image of View Orders](docs/imgs/view_orders.png)
 
 Orders with a message, display an envelope icon (mouseover displays the message). Several operations relevant to an order can be selected by hovering over the `Actions` button:
@@ -55,3 +64,10 @@ The barcode scanner can only input barcodes if the page is in focus (green backg
 
 ![Image of Create an Order](docs/imgs/create_an_order.png)
 
+The `Please choose a courier` drop-down options are the same as the `Courier Codes` in the `Key` drop-down on the `View Orders` page.
+
+![Image of Please choose a courier](docs/imgs/please_choose_a_courier.png)
+
+
+
+![Image of platform](docs/imgs/choose_platform.png)
