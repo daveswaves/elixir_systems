@@ -2,10 +2,13 @@
 
 * [View Orders](#view-orders)
 * [Scan Barcodes](#scan-barcodes)
+* [Create an Order](#create-an-order)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
 ![Image of Ground Control](docs/imgs/ground_control.png)
+
+**Search Barcodes is not used**
 
 A further dozen or so operations are available in the drop-down menu:
 
@@ -46,4 +49,9 @@ Nb. grey are orders that don't yet have a barcode
 The barcode scanner can only input barcodes if the page is in focus (green background). To signal this, the background turns red when focus is lost.
 
 ![Image of Scan Barcodes](docs/imgs/scan_barcodes_red.png)
+
+
+## Create an Order
+
+![Image of Create an Order](docs/imgs/create-an-order.png)
 
