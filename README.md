@@ -76,6 +76,8 @@ The barcode scanner can only input barcodes if the page is in focus (green backg
 
 ## Create an Order
 
+The **Create an Order** page actually has 2 states. The default (below) is the one that appears when accessed from the **Ground Control** page. The second is **Reorder**, and this appears when accessed from the `New order to customer` option `Action` drop-down (View Orders) - more on this later.
+
 ![Image of Create an Order](docs/imgs/create_an_order.png)
 
 The `Please choose a courier` drop-down options are the same as the `Courier Codes` in the `Key` drop-down on the `View Orders` page:
@@ -86,6 +88,6 @@ The drop-down below this displays the 3 channel options (Elixir, Floorworld & Pr
 
 ![Image of platform](docs/imgs/select_channel.png)
 
-The Items section displays the input fields (when `Need Invoice` checkbox selected) to add items to an order:  
+The **Items** section displays the input fields (when `Need Invoice?` checkbox selected) to add items to an order:  
 
 ![Image of need_invoice](docs/imgs/need_invoice.png)
