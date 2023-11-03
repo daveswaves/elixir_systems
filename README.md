@@ -99,6 +99,6 @@ As mentioned earlier, when accessed via the `New order to customer` link, it is 
 
 ![Image of reorder](docs/imgs/reorder.png)
 
-If `Repeat last order` is clicked, in the `Items` section, the customers order items are prepopulated:  
+If `Repeat last order` is clicked, in the `Items` section, the customer's order items are prepopulated:  
 
 ![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
