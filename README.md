@@ -53,5 +53,5 @@ The barcode scanner can only input barcodes if the page is in focus (green backg
 
 ## Create an Order
 
-![Image of Create an Order](docs/imgs/create-an-order.png)
+![Image of Create an Order](docs/imgs/create_an_order.png)
 
