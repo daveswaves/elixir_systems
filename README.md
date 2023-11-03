@@ -8,7 +8,7 @@ The initial splash screen (known as Ground Control) displays the following six o
 
 ![Image of Ground Control](docs/imgs/ground_control.png)
 
-**Search Barcodes is not used**
+**_Nb. Search Barcodes is not used_**
 
 A further dozen or so operations are available in the drop-down menu:
 
