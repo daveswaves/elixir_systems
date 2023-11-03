@@ -3,6 +3,7 @@
 * [View Orders](#view-orders)
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
+* [Reorder](#reorder)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -91,6 +92,8 @@ The drop-down below this displays the 3 channel options (Elixir, Floorworld & Pr
 The **Items** section displays the input fields (when `Need Invoice?` checkbox selected) to add items to an order:  
 
 ![Image of need_invoice](docs/imgs/need_invoice.png)
+
+## Reorder
 
 As mentioned earlier, when accessed via the `New order to customer` link, it is a reorders page. Basically, it prepopulates the form fields with existing customer data:  
 
