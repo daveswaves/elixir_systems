@@ -86,6 +86,6 @@ The drop-down below this displays the 3 channel options (Elixir, Floorworld & Pr
 
 ![Image of platform](docs/imgs/select_channel.png)
 
-The Items' `Need Invoice` section displays the 5 input fields to add items to an order:  
+The Items section displays the input fields (when `Need Invoice` checkbox selected) to add items to an order:  
 
 ![Image of need_invoice](docs/imgs/need_invoice.png)
