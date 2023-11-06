@@ -149,7 +149,7 @@ The 'SKU' search field just displays the 1 sku entered. Entering '3FT_TUBE-HEATE
 
 ![Image of search_products](docs/imgs/search_products.png)
 
-NOTE: Search only works if the exact case and full SKU is entered. Neither of the following return any records:
+NOTE: Search only works if the exact case and full SKU is entered (a short-sight that needs changing). Neither of the following return any records:
 
 * `heater`
 * `3ft_tube-heater`
