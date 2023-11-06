@@ -69,7 +69,7 @@ Checked orders result in `Process selected orders` being displayed:
 
 ![Image of process_all_orders](docs/imgs/process_selected_orders.png)
 
-The `Action` menu also has a `Preview Invoices` option that allows all historic order invoices to be previewed. Invoices are displayed without their original labels:
+The `Action` menu also has a preview invoices option (`Preview all Invoices` / `Preview selected Invoices`) that allows all historic order invoices to be previewed. Invoices are displayed without their original labels:
 
 ![Image of invoice](docs/imgs/invoice.png)
 
