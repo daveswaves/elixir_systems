@@ -5,7 +5,7 @@
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
-* [Invoices](#invoice)
+* [Customer Services](#customer-services)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -126,4 +126,7 @@ It also displays a`Repeat last order` link in the `Items` section. When clicked,
 
 ![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
 
-## Invoices
+## Customer Services
+
+![Image of customer_services](docs/imgs/customer_services.png)
+
