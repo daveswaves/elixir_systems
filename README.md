@@ -1,7 +1,7 @@
 # Elixir Systems
 
 * [View Orders](#view-orders)
-* [Process Orders](#process-orders)
+* [Process (print) Orders](#process-print-orders)
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
