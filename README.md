@@ -6,6 +6,7 @@
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
 * [Customer Services](#customer-services)
+* [View Products](#view-products)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -131,3 +132,22 @@ It also displays a`Repeat last order` link in the `Items` section. When clicked,
 Customer services is a separate system to the Elixir System documented so far. The Elixir System consists of 100+ PHP and JavaScript files, and a dozen SQLite databases running on a PHP 5.6 server. Customer services runs on a different server. It runs on Linux, and uses Django and Vue JS. Being a separate system, I'm not going to discuss it any further here.
 
 ![Image of customer_services](docs/imgs/customer_services.png)
+
+## View Products
+
+Displays the 'products' database contents. The database stores the 'weight' and 'length' of every 'sku'. This is used to calculate the correct shipping for any given order.
+
+![Image of view_products](docs/imgs/view_products.png)
+
+New records can be added by clicking the  `Add a product` button. This open the add product modal box.
+
+Records can also be modified by clicking `Edit` in the `actions` column. This opens the previous modal box, only prepopulated.
+
+| Add Product | Edit Product |
+| ----------- | ------------ |
+| ![Image of add_products](docs/imgs/add_products.png) | ![Image of edit_products](docs/imgs/edit_products.png) |
+
+
+
+
+3FT_TUBE-HEATER
