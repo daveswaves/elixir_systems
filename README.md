@@ -59,9 +59,9 @@ The contents of this menu has 2 states. If any individual orders are checked it 
 
 ## Process Orders
 
-The process orders button is used to print order invoices.
+The process orders button (near the `Action` menu) is used to print order invoices.
 
-The text displayed on the `Process all orders` button is also dynamic (near the `Action` menu):  
+The text displayed on the `Process all orders` button is also dynamic:  
 
 ![Image of process_all_orders](docs/imgs/process_all_orders.png)  
 
