@@ -41,6 +41,10 @@ Floorworld logo:
 Prosalt logo:  
 ![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png)
 
+| Floorworld logo: | Prosalt logo: |
+| ---------------- | ------------- |
+| ![Image of invoice logo - Floorworld](docs/imgs/invoice_logo_floorworld.png) | ![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png) |
+
 
 
 
