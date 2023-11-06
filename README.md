@@ -55,11 +55,11 @@ The contents of this menu has 2 states. If any individual orders are checked it 
 
 ![Image of batch actions](docs/imgs/batch_actions_selected.png)
 
-The text displayed on the `Process all orders` button is also dynamic (near the `Action` menu):
+The text displayed on the `Process all orders` button is also dynamic (near the `Action` menu):  
 
 ![Image of process_all_orders](docs/imgs/process_all_orders.png)  
 
-Checked orders result in `Process selected orders` being displayed:
+Checked orders result in `Process selected orders` being displayed:  
 
 ![Image of process_all_orders](docs/imgs/process_selected_orders.png)
 
