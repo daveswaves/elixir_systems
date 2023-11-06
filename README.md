@@ -35,17 +35,9 @@ The channel values affect which logos are displayed at the top of invoices:
 Elixir logo:  
 ![Image of invoice logo - Elixir](docs/imgs/invoice_logo_elixir.png)
 
-Floorworld logo:  
-![Image of invoice logo - Floorworld](docs/imgs/invoice_logo_floorworld.png)
-
-Prosalt logo:  
-![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png)
-
 | Floorworld logo: | Prosalt logo: |
 | ---------------- | ------------- |
 | ![Image of invoice logo - Floorworld](docs/imgs/invoice_logo_floorworld.png) | ![Image of invoice logo - Prosalt](docs/imgs/invoice_logo_prosalt.png) |
-
-
 
 
 Orders with a message, display an envelope icon (mouseover displays the message). Several operations relevant to an order can be selected by hovering over the `Actions` button:
