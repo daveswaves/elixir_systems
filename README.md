@@ -139,9 +139,7 @@ Displays the 'products' database contents. The database stores the 'weight' and 
 
 ![Image of view_products](docs/imgs/view_products.png)
 
-New records can be added by clicking the  `Add a product` button. This open the add product modal box.
-
-Records can also be modified by clicking `Edit` in the `actions` column. This opens the previous modal box, only prepopulated.
+New records can be added by clicking the  `Add a product` button. This open the add product modal box. Records can also be modified by clicking `Edit` in the `actions` column. This opens the previous modal box, only prepopulated.
 
 | Add Product | Edit Product |
 | ----------- | ------------ |
