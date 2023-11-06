@@ -1,6 +1,7 @@
 # Elixir Systems
 
 * [View Orders](#view-orders)
+* [Process Orders](#process-orders)
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
@@ -54,6 +55,11 @@ The `Action` menu in the top right has several batch operations that can be used
 The contents of this menu has 2 states. If any individual orders are checked it displays the following:
 
 ![Image of batch actions](docs/imgs/batch_actions_selected.png)
+
+
+## Process Orders
+
+The process orders button is used to print order invoices.
 
 The text displayed on the `Process all orders` button is also dynamic (near the `Action` menu):  
 
