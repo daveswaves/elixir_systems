@@ -145,7 +145,12 @@ New records can be added by clicking the  `Add a product` button. This open the 
 | ----------- | ------------ |
 | ![Image of add_products](docs/imgs/add_products.png) | ![Image of edit_products](docs/imgs/edit_products.png) |
 
+The 'SKU' search field just displays the 1 sku entered. Entering '3FT_TUBE-HEATER', for example, displays the following:
 
+![Image of search_products](docs/imgs/search_products.png)
 
+NOTE: Search only works if the full SKU is entered and the exact case. Neither of the following examples return any records:
 
-3FT_TUBE-HEATER
+* `heater`
+* `3ft_tube-heater`
+
