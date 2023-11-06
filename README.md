@@ -55,11 +55,11 @@ The contents of this menu has 2 states. If any individual orders are checked it 
 
 ![Image of batch actions](docs/imgs/batch_actions_selected.png)
 
-The text displayed on the `Process all orders` button (near the `Action` menu):  
+The text displayed on the `Process all orders` button is also dynamic (near the `Action` menu):  
 
 ![Image of process_all_orders](docs/imgs/process_all_orders.png)  
 
-is also dynamic. Checked orders result in `Process selected orders` being displayed:  
+Checked orders result in `Process selected orders` being displayed:  
 ![Image of process_all_orders](docs/imgs/process_selected_orders.png)
 
 The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 orders are green *"Order has been marked and is ready to be dispatched"*, followed by red *"Order has been processed but not yet marked"* and grey *"Order is ready to be processed, unbarcoded"*.
