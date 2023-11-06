@@ -73,7 +73,7 @@ The `Action` menu also has a preview invoices option (`Preview all Invoices` / `
 
 ![Image of invoice](docs/imgs/invoice.png)
 
-### Colour Codes / Courier Codes Legend
+### Legend: Colour Codes / Courier Codes 
 
 The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 orders are green *"Order has been marked and is ready to be dispatched"*, followed by red *"Order has been processed but not yet marked"* and grey *"Order is ready to be processed, unbarcoded"*.
 
