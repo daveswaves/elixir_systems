@@ -57,7 +57,7 @@ The contents of this menu has 2 states. If any individual orders are checked it 
 ![Image of batch actions](docs/imgs/batch_actions_selected.png)
 
 
-## Process Orders
+## Process (print) Orders
 
 The process orders button (near the `Action` menu) is used to print order invoices.
 
