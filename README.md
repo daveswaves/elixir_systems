@@ -4,7 +4,7 @@
 * [Scan Barcodes](#scan-barcodes)
 * [Create an Order](#create-an-order)
 * [Reorder](#reorder)
-* [Invoice](#invoice)
+* [Invoices](#invoice)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -50,6 +50,12 @@ Orders with a message, display an envelope icon (mouseover displays the message)
 The `Action` menu in the top right has several batch operations that can be used on multiple orders simultaneously.
 
 ![Image of batch actions](docs/imgs/batch_actions.png)
+
+The contents of this menu has 2 states. If any individual orders are checked it displays the following:
+
+![Image of batch actions](docs/imgs/batch_actions_selected.png)
+
+The text displayed on the `Process all orders` button (near the `Action` menu) ![Image of process_all_orders](docs/imgs/process_all_orders.png) is also dynamic. Checked orders result in `Process selected orders` being displayed: ![Image of process_all_orders](docs/imgs/process_selected_orders.png)
 
 The 'Colour Codes', in the `Key` drop-down, explains the meaning of the colours on the far left of the order's row. In the example shown, the first 2 orders are green *"Order has been marked and is ready to be dispatched"*, followed by red *"Order has been processed but not yet marked"* and grey *"Order is ready to be processed, unbarcoded"*.
 
@@ -100,10 +106,12 @@ As mentioned earlier, when accessed via the `New order to customer` link, it dis
 
 ![Image of reorder](docs/imgs/reorder.png)
 
-It also displays a`Repeat last order` link in the `Items` section. When clicked, the customer's order items are prepopulated:  
+It also displays a`Repeat last order` link in the `Items` section. When clicked, the order's items are prepopulated:  
 
 ![Image of reorder_repeat_last_order](docs/imgs/reorder_repeat_last_order.png)
 
-## Invoice
+## Invoices
+
+
 
 ![Image of invoice](docs/imgs/invoice.png)
