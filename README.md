@@ -30,6 +30,8 @@ The channels are only relevant to Ebay. We currently have 3 different Ebay accou
 
 ![Image of View Orders](docs/imgs/view_orders.png)
 
+### Invoice Logos
+
 The channel values affect which logos are displayed at the top of invoices:
 
 Elixir logo:  
