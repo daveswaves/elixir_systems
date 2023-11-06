@@ -128,5 +128,6 @@ It also displays a`Repeat last order` link in the `Items` section. When clicked,
 
 ## Customer Services
 
-![Image of customer_services](docs/imgs/customer_services.png)
+Customer services is a separate system to the Elixir System documented so far. The Elixir System consists of 100+ PHP and JavaScript files, and a dozen SQLite databases running on a PHP 5.6 server. Customer services runs on a different server. It runs on Linux, and uses Django Vue JS. Being a separate system, I'm not going to discuss it any further here.
 
+![Image of customer_services](docs/imgs/customer_services.png)
