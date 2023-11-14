@@ -7,6 +7,7 @@
 * [Reorder](#reorder)
 * [Customer Services](#customer-services)
 * [View Products](#view-products)
+* [Search Orders](#search-orders)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
@@ -56,6 +57,35 @@ The contents of this menu has 2 states. If any individual orders are checked it 
 ![Image of batch actions](docs/imgs/batch_actions_selected.png)
 
 
+## Search Orders
+
+There are a number of issues with the current search.
+
+Amazon order IDs use the following format (each x being a number): xxx-xxxxxxx-xxxxxxx (eg. 026-0965816-1453949)
+
+Ebay Elixir uses a total of 7 digits (eg. 1385884), Ebay Floorworld: 'FW-' followed by 4 digits (eg. FW-3089), Ebay Prosalt: 'PS-' followed by 5 digits
+
+The website uses 6 digits.
+
+Onbuy is inconsistent. Apart from starting with the letter 'T', they can be all numbers or a mixture of numbers and letters. They also vary between 6 and 7 characters in length.
+
+
+The issue arises when searching website order IDs. The system does not just look for an exact match (full string), so entering 6 digits for a website order also returns matching results for Amazon and Ebay Elixir orders. In addition to this, the system does not allow barcodes to be searched.
+
+My solution for this is to have search default to querying Ebay Elixir and Website orders. A search string will need to contain a dash to query Amazon. A number with a leading dash will act on the last segment of the Amazon order ID. Eg. '-305633' would return:
+
+```
+202-0605471-3056336
+205-0873569-3056331 
+026-4923194-3056333 
+etc.
+```
+
+The solution for searching barcodes is to enter a leading 'b': eg. `b41219756`
+
+<!-- SS15 6ED -->
+
+
 ## Process (print) Orders
 
 The process orders button (near the `Action` menu) is used to print order invoices.
@@ -87,8 +117,8 @@ The barcodes DB table stores the status of the order:
 
 * GENERATED (displays as red in View Orders)
 * MARKED (green)
-* VOID (brown)
 * HOLD (yellow)
+* VOID (brown)
 
 Nb. grey are orders that don't yet have a barcode
 
@@ -97,6 +127,12 @@ Nb. grey are orders that don't yet have a barcode
 The barcode scanner can only input barcodes if the page is in focus (green background). To signal this, the background turns red when focus is lost.
 
 ![Image of Scan Barcodes](docs/imgs/scan_barcodes_red.png)
+
+
+
+![Image of Barcodes](docs/imgs/barcodes2.jpg)
+
+![Image of Barcodes](docs/imgs/barcodes1.jpg)
 
 
 ## Create an Order
