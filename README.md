@@ -1,13 +1,13 @@
 # Elixir Systems
 
-* [View Orders](#view-orders)
-* [Search Orders](#search-orders)
-* [Process (print) Orders](#process-print-orders)
-* [Scan Barcodes](#scan-barcodes)
-* [Create an Order](#create-an-order)
-* [Reorder](#reorder)
-* [Customer Services](#customer-services)
-* [View Products](#view-products)
+* [View Orders](#view-orders-top)
+* [Search Orders](#search-orders-top)
+* [Process (print) Orders](#process-print-orders-top)
+* [Scan Barcodes](#scan-barcodes-top)
+* [Create an Order](#create-an-order-top)
+* [Reorder](#reorder-top)
+* [Customer Services](#customer-services-top)
+* [View Products](#view-products-top)
 
 The initial splash screen (known as Ground Control) displays the following six operations:
 
